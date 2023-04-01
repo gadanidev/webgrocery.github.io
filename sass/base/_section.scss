@@ -1,0 +1,104 @@
+//section pricing  
+.section-about {
+  padding: 5rem 5rem;
+  background-color: $color-gray-light;
+
+  &-heading {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: transparent;
+    text-transform: uppercase;
+    word-spacing: 0.4rem;
+    background-color: $color-orangered;
+    background-clip: text;
+    -webkit-background-clip: TEXT;
+    transition: all 0.5s;
+    &:hover {
+      transform: skew(15deg, 2deg) scale(1.1);
+      text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+    }
+  }
+  &-heading1 {
+    font-size: 1.2rem;
+    color: $color-black;
+    font-weight: 300;
+    margin-top: 2rem;
+    text-transform: capitalize;
+  }
+  &-p-pragraph {
+    font-size: 1rem;
+    color: $color-grey;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    display: inline-block;
+    color: $color-green;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 3px solid $color-green;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    animation: moveInBottom 0.4s;
+  }
+}
+
+//section contactus
+
+.section-contactus {
+  width: 100%;
+  color: $color-white;
+  background-image: url(../img/banner5.jpg);
+  background-size: cover;
+  height: 100%;
+  padding-top: 2REM;
+  padding-bottom: 30REM;
+
+  position: relative;
+
+  .conhead {
+    margin-left: 42%;
+    margin-top: 25px;
+    display: inline-block;
+    color: $color-white;
+
+    font-size: 2rem;
+  }
+  &-conform {
+    display: inline-block;
+    text-transform: uppercase; 
+    left: 30%;
+    top: 20%;
+    width: 20rem;
+    position: absolute;
+    box-shadow: 0 2.5rem 6rem rgba($color-black,0.4);
+    background-image: linear-gradient(
+      rgba($color-black, 0.5),
+      rgba($color-black, 0.5)
+    );
+    font-size: 0.9rem;
+  }
+
+  & input,
+  label {
+    width: 95%;
+
+    height: 2rem;
+    margin: 0.5rem 0.4rem;
+    font-size: 0.9rem;
+    padding: 0.2rem;
+
+    outline: none;
+  }
+}

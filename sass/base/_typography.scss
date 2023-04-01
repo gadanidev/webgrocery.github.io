@@ -1,0 +1,32 @@
+.heading{
+    position: absolute;
+    display:inline-block;
+text-align: center;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+transition: all .5s;
+
+&-h1{
+    font-weight: 600;
+    font-size: 3rem;
+    color:$color-white;
+    text-transform: capitalize;
+    word-spacing: 0.5rem;
+    
+}
+&-span{
+    display: inline-block;
+    animation: heading-anim .5s ease-out;
+
+
+
+}
+
+&-span2{
+    display: block;
+    font-size: 2rem;
+    font-weight: 300;
+   
+}
+}

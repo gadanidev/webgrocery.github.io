@@ -1,0 +1,38 @@
+@keyframes heading-anim{
+    100%{
+        
+       overflow: 1;
+        transform: translate(0rem);
+    
+        
+    }
+   
+       
+    70%{
+        opacity: 0.9;
+
+      
+        transform:scale(1.2);
+    }
+    0%{
+        opacity: 0;
+        transform: translateY(-1rem);
+
+    }
+}
+@keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(10px); }
+    100% {
+      overflow: 1;
+      transform: translate(0); } }
+
+
+      //animation
+      .animated {
+        animation-delay:0.5s;
+       
+        animation: moveInBottom 0.5s ease-out;
+        
+      }

@@ -1,0 +1,164 @@
+.cart {
+  font-size: 1rem;
+  display: block;
+  padding: 12rem;
+  padding-top: 0%;
+  &-head {
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: oblique;
+    margin: 0 auto;
+    text-align: center;
+    margin: 1.6rem 0;
+  }
+  &-notfound {
+    color: red;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+    word-spacing: 0.2rem;
+    padding: 1rem 7rem;
+  }
+
+  table {
+    text-align: center;
+
+    thead {
+      tr {
+        td {
+          font-size: 0.7rem;
+          font-weight: 200;
+          border-bottom: 1px solid rgba($color-green-light, 0.5);
+          padding: 1.9rem 1.5rem 1.5rem 1.5rem;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+            &:nth-child(2){
+            text-align: left;
+                width:27rem;
+          }
+           
+          font-size: 0.6rem;
+          border-bottom: 1px solid rgba($color-green-light, 0.5);
+
+          padding: 0.2rem 1rem;
+          a{
+          
+              text-decoration: none;
+              color: $color-black;
+              
+            &.remove{
+           
+                  color:$color-grey;
+                  display: block;
+                  width: 3rem;
+                  font-size: 0.5rem;
+                  border-radius: 12rem ;
+                  text-decoration: none;
+                  border-bottom: 3px solid green;
+                  border-radius: 0.4rem;
+                  padding: 0.2rem;
+            }
+           
+           
+          }
+          input[type="number"]{
+            width:5rem;
+          }
+                    }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+ 
+.cart{
+  padding: 2rem;
+  padding-top: 0%;
+      }
+  
+  }
+
+.subtotal{
+text-align: right;
+font-size: 0.8rem;
+margin: 1rem;
+
+    display:block;
+}
+.buttons{
+    float:right;  
+
+#but-sub{
+    width:7rem;
+    
+    margin: 0.2rem;
+
+    margin-top: 1rem;
+   
+}}
+
+//final pro
+.tbody{
+  margin: 2rem;
+  position: relative;
+  thead {
+    tr {
+      td {
+        font-size: 0.7rem;
+        font-weight: 200;
+        border-bottom: 1px solid rgba($color-green-light, 0.5);
+        padding: 1.9rem 1.5rem 1.5rem 1.5rem;
+      }
+    }
+  }
+  tbody{
+  tr {
+    td {
+        &:nth-child(2){
+        text-align: left;
+            width:11rem;
+      }
+       
+      font-size: 0.6rem;
+      border-bottom: 1px solid rgba($color-green-light, 0.5);
+
+      padding: 0.2rem 1rem;
+      a{
+      
+          text-decoration: none;
+          color: $color-black;
+      }}}}}
+      .subtotal1{
+        margin-left: 25rem;
+        font-size: 0.8rem;
+        margin-top: 1.5rem;
+
+        
+            display:block;
+        }
+
+        ///categrios
+    
+.categrios
+{
+  width:14rem;
+  height:2.5rem;
+  padding: 0.5rem;
+  color: darkgreen;
+  font-size: 1rem;
+margin: 0 6rem;
+border: none;
+border-radius: 1rem;
+background-color: rgba(255, 182, 193, 0.644);
+&-cat{
+ 
+  border: none;
+  border-radius: 15rem;
+
+}
+}

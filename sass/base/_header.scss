@@ -1,0 +1,154 @@
+.nav {
+  padding: 0.8rem;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(136, 247, 10, 0.356),
+      rgba(5, 253, 100, 0.356)
+    ),
+    url(../img/grocery.jpeg);
+  height: 100vh;
+  background-size: cover;
+  background-color: rgba($color-white, 0.8);
+
+  &-logo {
+    float: left;
+
+    font-size: 1rem;
+  }
+  &-menu {
+    float: right;
+
+    &-subit {
+      display: none;
+      list-style-type: none;
+    }
+  }
+
+  ul {
+    font-size: 0.8rem;
+    display: flex;
+
+    li {
+      margin-right: 1.5rem;
+      text-transform: uppercase;
+      list-style: none;
+
+      &:hover .nav-menu-subit {
+        display: block;
+        position: absolute;
+      }
+      &:hover .nav-menu-subit ul {
+        display: block;
+      }
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.5rem;
+        transition: all 0.5s;
+        color: $color-white;
+        border-radius: 0.5rem;
+
+        &.active {
+          color: white;
+          background-color: $color-card2-dark;
+          transform: scale(1.1);
+        }
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+// header all
+
+
+.nav-shop {
+
+  display: flex;
+  margin-bottom: 0rem;
+  padding: 0.8rem;
+  width: 100%;
+  color: $color-grey;
+ 
+  align-items: center;  
+  font-size: 0.8rem;
+  
+
+  &-head {
+    display:flex ;
+    float: left;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-top: 0.5rem;
+    margin-left: 3rem;
+    text-align: center;
+    flex: 0 0 35%;
+    
+  }
+
+  &-menu { 
+
+    display: flex;
+    flex: 0 0 45%;
+    a {
+      // float: right;
+      margin-right: 0.8rem;
+      color: $color-grey;
+
+    }
+  
+
+  ul {
+    font-size: 0.8rem;
+    display: inline-flex;
+   
+
+    li {
+      margin-right: 1.5rem;
+      text-transform: uppercase;
+      list-style: none;
+      align-items: center;
+      justify-content:space-between;
+    
+
+      &:hover .nav-menu {
+        display: block;
+        position: absolute;
+      }
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.5rem;
+        transition: all 0.5s;
+        color: $color-grey;
+        border-radius: 0.5rem;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  
+}
+
+  hr { 
+margin-top: 0.5rem;
+    width: 100%;
+  }
+}
+
+.mycart{
+  display: flex;
+ padding: 0.5rem;
+ text-transform: capitalize;
+ text-decoration: none;
+ color: white;
+background-color: rgba(38, 207, 89, 0.753);
+
+}
